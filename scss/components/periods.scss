@@ -1,0 +1,141 @@
+.main {
+  // .main__periods
+  &__periods {
+    margin-bottom: 153px;
+    position: relative;
+    &::before {
+      content: url("../../images/wheat_transparent.png");
+      transform: scaleX(-1);
+      position: absolute;
+      top: 306px;
+      right: 88%;
+    }
+    &::after {
+      content: "";
+      background-image: linear-gradient($background-gradient-2);
+      width: 2260px;
+      height: 1739.15px;
+      border-radius: 10% 30% 50% 60%;
+      transform: rotate(340deg);
+      position: absolute;
+      top: -615px;
+      left: -100px;
+      z-index: -1;
+    }
+  }
+}
+
+.periods {
+}
+
+.periods-section {
+  // .periods-section__container
+  &__container {
+  }
+
+  // .periods-section__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 104px;
+    }
+  }
+
+  // .periods-section__list
+  &__list {
+    max-width: 1009px;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+      content: "";
+      height: 100%;
+      border: 1px solid rgba(174, 216, 176, 0.38);
+      position: absolute;
+      top: 0;
+      left: 228px;
+    }
+  }
+
+  // .periods-section__item
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    &::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-image: linear-gradient($dots-gradient);
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      position: absolute;
+      left: 214px;
+      top: 0;
+      z-index: 4;
+    }
+    &:last-child {
+      &::before {
+        background-image: linear-gradient(112.99deg, #F5EA8E -2.52%, #8AA831 114.65%);
+      }
+    }
+    &:last-child {
+      &::after {
+        content: "";
+        height: 100%;
+        border: 10px solid #FFFFFF;
+        position: absolute;
+        top: 0;
+        left: 226px;
+        z-index: 3;
+      }
+    }
+  }
+
+  // .periods-section__date
+  &__date {
+    max-width: 170px;
+    margin-right: 60px;
+  }
+
+  // .periods-section__month
+  &__month{
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $text-accent;
+    margin-bottom: 5px;
+  }
+
+  //periods-section__year
+  &__year {
+    font-family: 'Mina';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.45;
+    letter-spacing: 0.19em;
+  }
+
+  // .periods-section__description
+  &__description {
+  }
+
+  // .periods-section__info
+  &__info {
+    width: 700px;
+    font-weight: 500;
+    line-height: 1.44;
+    position: relative;
+
+  }
+}
+
+.description {
+  // .description__title
+  &__title {
+  }
+}
+
+.text-accent {
+}

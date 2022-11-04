@@ -1,0 +1,115 @@
+.main {
+  // .main__distribution
+  &__distribution {
+    margin-bottom: 105px;
+  }
+}
+
+.distribution {
+}
+
+.distribution-section {
+  // .distribution-section__container
+  &__container {
+  }
+
+  // .distribution-section__description
+  &__description {
+    width: 579px;
+  }
+
+  // .distribution-section__title
+  &__title {
+    margin-bottom: 98px;
+  }
+
+  // .distribution-section__diagram
+  &__diagram {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.common-section {
+  // .common-section__description
+  &__description {
+  }
+}
+
+.description {
+  // .description__title
+  &__title {
+  }
+
+  // .description__subtitle
+  &__subtitle {
+  }
+
+  // .description__text
+  &__text {
+  }
+}
+
+.text-accent {
+}
+
+.diagram {
+  // .diagram__images
+  &__images {
+    margin-right: 119px;
+  }
+
+  // .diagram__list
+  &__list {
+  }
+
+  // .diagram__item
+  &__item {
+    position: relative;
+    font-weight: 400;
+    line-height: 1.25;
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+
+    // .diagram__item_1
+    &_1 {
+      &::before {
+        @extend .diagram;
+        border-color: #8AA831;
+      }
+    }
+
+    // .diagram__item_2
+    &_2 {
+      &::before {
+        @extend .diagram;
+        border-color: #FCF3B8;
+      }
+    }
+
+    // .diagram__item_3
+    &_3 {
+      &::before {
+        @extend .diagram;
+        border-color: #BDE0BB;
+      }
+    }
+
+    // .diagram__item_4
+    &_4 {
+      &::before {
+        @extend .diagram;
+        border-color: #818181;
+      }
+    }
+
+    // .diagram__item_5
+    &_5 {
+      &::before {
+        @extend .diagram;
+        border-color: #FBD606;
+      }
+    }
+  }
+}

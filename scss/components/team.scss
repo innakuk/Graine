@@ -1,0 +1,119 @@
+.main {
+  // .main__team
+  &__team {
+    margin-bottom: 156px;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: linear-gradient($background-gradient-3);
+      width: 2251px;
+      height: 981px;
+      border-radius: 10% 0% 50% 60%;
+      transform: rotate(19deg);
+      position: absolute;
+      top: 198px;
+      left: -278px;
+      z-index: -1;
+    }
+    &::after {
+      content: url("../../images/wheat.png");
+      position: absolute;
+      bottom: -75px;
+      left: 89%;
+    }
+  }
+}
+
+.team {
+}
+
+.team-section {
+  // .team-section__container
+  &__container {
+
+  }
+
+  // .team-section__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 115px;
+    }
+  }
+
+  // .team-section__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    row-gap: 55px;
+  }
+
+  // .team-section__item
+  &__item {
+    width: 222px;
+    display: grid;
+    justify-items: center;
+  }
+
+  // .team-section__avatar
+  &__avatar {
+    margin-bottom: 38px;
+    position: relative;
+    width: 202px;
+    min-height: 202px;
+    &::after{
+      content: "";
+      width: 51px;
+      height: 51px;
+      border-radius: 50%;
+      background-color: $text-main;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  // .team-section__avatar_img
+  &__avatar_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+
+
+  // .team-section__facebook
+  &__facebook {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    z-index: 1;
+  }
+
+  // .team-section__name
+  &__name {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0.96;
+  }
+
+  // .team-section__description
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+}
+
+.description {
+  // .description__title
+  &__title {
+  }
+}
+
+.text-accent {
+}

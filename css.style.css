@@ -1,0 +1,652 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: #4C5D76;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*=__container] {
+  max-width: 1370px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: 700;
+  background: linear-gradient(90deg, #FBF3BB -1.29%, #EDF4DE 46.72%, #E3F0D7 57.78%, #BEE1BC 100%);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.common-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.common-section__description {
+  max-width: 607px;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.76;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+}
+.description__title:not(:last-child) {
+  margin-bottom: 70px;
+}
+.description__title::after {
+  content: "";
+  width: 112px;
+  height: 4px;
+  background-color: #AED8B0;
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+}
+.description__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 0 31px 0;
+}
+.description__text {
+  font-weight: 400;
+  line-height: 1.94;
+  margin: 0;
+}
+.description__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+.text-accent {
+  color: #8AA831;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 15px;
+  margin-bottom: 97px;
+}
+.header__logo {
+  width: 192px;
+  height: 81px;
+}
+.header__button {
+  font-size: 14px;
+  padding: 7px 32px;
+  border-radius: 18px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.menu__link {
+  font-weight: 400;
+  line-height: 1.38;
+  text-transform: uppercase;
+}
+
+.icon-menu {
+  display: none;
+}
+
+.main {
+  position: relative;
+}
+.main__home {
+  margin-bottom: 160px;
+}
+.main__home::after {
+  content: url("../../images/wheat.png");
+  transform: scaleX(-1);
+  position: absolute;
+  top: 400px;
+  right: 92%;
+}
+
+.home__section {
+  position: relative;
+}
+.section-home__description {
+  width: 561px;
+  position: relative;
+}
+.section-home__description::after {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(194, 227, 191, 0.21) 0%, #FFFFFF 100%);
+  width: 1171.72px;
+  height: 1111.72px;
+  border-radius: 0px 564.194px 221px 564.194px;
+  position: absolute;
+  z-index: -1;
+  bottom: -300px;
+  right: -50px;
+}
+.section-home__info {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.section-home__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.16;
+  text-transform: none;
+}
+.section-home__title:not(:last-child) {
+  margin-bottom: 104px;
+}
+.section-home__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+  margin: 0px 0px 71px 0px;
+}
+.section-home__buttons {
+  display: flex;
+}
+.section-home__button {
+  height: 54px;
+  padding: 16px 57px;
+  border-radius: 27px;
+  margin-right: 51px;
+}
+.section-home__download-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  color: rgba(76, 93, 118, 0.66);
+}
+.section-home__images {
+  position: relative;
+}
+.section-home__image {
+  width: 698px;
+  display: inline-block;
+  margin-left: 34px;
+  margin-top: 118px;
+  position: absolute;
+  z-index: 100;
+}
+.section-home__image-wrap {
+  width: 767px;
+  height: 767px;
+  border: 1px solid rgba(138, 168, 49, 0.17);
+  border-radius: 50%;
+  position: relative;
+  left: 47px;
+}
+.section-home__image-wrap::before {
+  content: "";
+  width: 610.94px;
+  height: 610.94px;
+  border: 1px solid rgba(138, 168, 49, 0.48);
+  border-radius: 50%;
+  position: absolute;
+  left: 78.64px;
+  top: 78.63px;
+}
+.section-home__image-wrap::after {
+  content: "";
+  width: 470.6px;
+  height: 470.6px;
+  border: 1px solid #CEDAA9;
+  border-radius: 50%;
+  position: absolute;
+  left: 148.8px;
+  top: 148.8px;
+}
+.section-home__iso {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding-right: 57px;
+}
+
+.accent-soft {
+  color: #CDDF97;
+}
+
+.green {
+  color: #9CBA40;
+}
+
+.download-button__img {
+  margin-right: 25px;
+}
+.section-home-iso__countdown {
+  display: flex;
+  width: 734px;
+  border-radius: 14px;
+  background-color: rgba(174, 216, 176, 0.12);
+  padding: 37px 74px 52px 54px;
+  justify-content: space-between;
+}
+.iso-countdown__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.47;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  margin: 0;
+}
+.iso-countdown__info {
+  width: 493px;
+}
+.iso-countdown__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 82px;
+  width: 100%;
+}
+.iso-countdown__quantity {
+  font-family: "Mina";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0 0 23px 0;
+}
+.iso-countdown__period {
+  font-weight: 400;
+  line-height: 1.06;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.iso-countdown__scale {
+  width: 479px;
+  height: 25px;
+  background-color: #C7D0D9;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12.5px;
+  margin: 0 auto;
+  position: relative;
+}
+.iso-countdown__scale::after {
+  content: "";
+  width: 213px;
+  height: 25px;
+  background-image: linear-gradient(90deg, #FCF3B8 0%, #F2F6E1 48.9%, #BDE0BB 98.83%);
+  box-shadow: 0px 6px 25px #C2E2BE;
+  border-radius: 12.5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.iso-presale {
+  width: 503px;
+}
+.iso-presale__coin-items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 58px;
+  border-bottom: 1px solid #BEE1BC;
+  margin-bottom: 58px;
+}
+.iso-presale__coin-item {
+  display: flex;
+}
+.iso-presale__coin-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coin-item__icon {
+  margin-right: 14px;
+}
+.coin-item__price {
+  font-weight: 500;
+  line-height: 1.06;
+  margin: 0;
+}
+.coin-item__text {
+  font-weight: 400;
+  line-height: 1.06;
+  margin: 0 0 5px 0;
+  color: rgba(76, 93, 118, 0.66);
+}
+
+.coin-info__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: rgba(76, 93, 118, 0.66);
+}
+.coin-info__button {
+  margin-right: 0;
+}
+
+.what-is {
+  position: relative;
+}
+.what-is::before {
+  content: url("../../images/grain.png");
+  position: absolute;
+  top: -70px;
+  right: 51%;
+}
+.what-is::after {
+  content: url("../../images/wheat.png");
+  position: absolute;
+  left: 88.5%;
+  top: 355px;
+}
+.what-is__section {
+  margin-bottom: 145px;
+}
+.what-is__image {
+  max-width: 650px;
+}
+.what-is__list {
+  column-count: 2;
+  padding: 0;
+  margin: 61px 0 0 0;
+}
+.what-is__item {
+  font-weight: 400;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+}
+.what-is__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.what-is__item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #AED8B0;
+  margin-right: 20px;
+}
+
+.main__partners {
+  border-bottom: 1px solid rgba(174, 216, 176, 0.43);
+  border-top: 1px solid rgba(174, 216, 176, 0.43);
+  margin-bottom: 156px;
+}
+
+.partners__section {
+  padding: 50px;
+}
+.section-partners__list {
+  display: flex;
+  justify-content: space-between;
+}
+.game {
+  position: relative;
+}
+.game::after {
+  content: url("../../images/game.png");
+  position: absolute;
+  left: 57%;
+  top: -125px;
+}
+.game__image {
+  max-width: 652px;
+}
+
+.section-game {
+  margin-bottom: 122px;
+}
+.section-game__common-section {
+  margin-bottom: 22px;
+}
+.section-game__button-wrap {
+  background-image: url("../../images/seeds.png");
+  width: 295px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+}
+.section-game__button {
+  padding: 16px 52px;
+  border-radius: 27px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.finance {
+  position: relative;
+}
+.finance__section {
+  margin-bottom: 154px;
+}
+.finance__section::after {
+  content: url("../../images/wheat_transparent.png");
+  position: absolute;
+  left: 90%;
+  top: 130px;
+}
+.finance__image {
+  max-width: 658px;
+}
+
+.main__benefits {
+  margin-bottom: 200px;
+}
+
+.benefits-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 106px;
+}
+.benefits-section__item {
+  width: 360px;
+  display: flex;
+  align-items: center;
+}
+.benefits-section__img {
+  margin-right: 26px;
+}
+.benefits-section-description__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 0.95;
+}
+.benefits-section-description__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+}
+
+.main__periods {
+  margin-bottom: 153px;
+  position: relative;
+}
+.main__periods::before {
+  content: url("../../images/wheat_transparent.png");
+  transform: scaleX(-1);
+  position: absolute;
+  top: 306px;
+  right: 88%;
+}
+.main__periods::after {
+  content: "";
+  background-image: linear-gradient(213.96deg, rgba(194, 227, 191, 0.16) 10.1%, rgba(255, 255, 255, 0.58) 73.21%);
+  width: 2260px;
+  height: 1739.15px;
+  border-radius: 10% 30% 50% 60%;
+  transform: rotate(340deg);
+  position: absolute;
+  top: -615px;
+  left: -100px;
+  z-index: -1;
+}
+
+.periods-section__title:not(:last-child) {
+  margin-bottom: 104px;
+}
+.periods-section__list {
+  width: 1009px;
+  margin: 0 auto;
+  position: relative;
+}
+.periods-section__list::before {
+  content: "";
+  height: 100%;
+  border: 1px solid rgba(174, 216, 176, 0.38);
+  position: absolute;
+  top: 0;
+  left: 228px;
+}
+.periods-section__item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.periods-section__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+.periods-section__item::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(112.99deg, #F5EA8E -2.52%, #C0E1BB 114.65%);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  position: absolute;
+  left: 214px;
+  top: 0;
+  z-index: 4;
+}
+.periods-section__item:last-child::before {
+  background-image: linear-gradient(112.99deg, #F5EA8E -2.52%, #8AA831 114.65%);
+}
+.periods-section__item:last-child::after {
+  content: "";
+  height: 100%;
+  border: 10px solid #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 226px;
+  z-index: 3;
+}
+.periods-section__date {
+  width: 170px;
+}
+.periods-section__month {
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #8AA831;
+  margin-bottom: 5px;
+}
+.periods-section__year {
+  font-family: "Mina";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.45;
+  letter-spacing: 0.19em;
+}
+.periods-section__info {
+  width: 700px;
+  font-weight: 500;
+  line-height: 1.44;
+  position: relative;
+}
+
+.team-section__title:not(:last-child) {
+  margin-bottom: 115px;
+}
+.team-section__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-section__item {
+  width: 222px;
+  gap: 151px;
+}
+
+/*# sourceMappingURL=css.style.css.map */

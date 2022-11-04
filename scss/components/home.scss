@@ -1,0 +1,329 @@
+.main {
+  position: relative;
+  // .main__home
+  &__home {
+    margin-bottom: 160px;
+    &::after{
+      content: url("../../images/wheat.png");
+      transform: scaleX(-1);
+      position: absolute;
+      top: 400px;
+      right: 92%;
+    }
+  }
+}
+
+.home {
+  // .home__section
+  &__section {
+    position: relative;
+  }
+
+  // .home__container
+  &__container {
+  }
+}
+
+.section-home {
+  // .section-home__description
+  &__description{
+    width: 561px;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: linear-gradient($background-gradient-1);
+      width: 1171.72px;
+      height: 1111.72px;
+      border-radius: 0px 564.194px 221px 564.194px;
+      position: absolute;
+      z-index: -1;
+      bottom: -300px;
+      right: -50px;
+    }
+  }
+
+  // .section-home__info
+  &__info {
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  // .section-home__title
+  &__title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.16;
+    text-transform: none;
+    &:not(:last-child) {
+      margin-bottom: 104px;
+    }
+  }
+
+  // .section-home__text
+  &__text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.38;
+    margin: 0px 0px 71px 0px;
+  }
+
+  // .section-home__buttons
+  &__buttons {
+    display: flex;
+  }
+
+  // .section-home__button
+  &__button {
+    height: 54px;
+    padding: 16px 57px;
+    border-radius: 27px;
+    margin-right: 51px;
+  }
+
+  // .section-home__download-button
+  &__download-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 700;
+    font-size: $default-font-size;
+    line-height: 1.38;
+    color: $text-light;
+  }
+
+  // .section-home__images
+  &__images {
+    position: relative;
+  }
+
+  // .section-home__image
+  &__image {
+    width: 698px;
+    display: inline-block;
+    margin-left: 34px;
+    margin-top: 118px;
+    position: absolute;
+    z-index: 100;
+  }
+
+  // .section-home__image-wrap
+  &__image-wrap {
+    width: 767px;
+    height: 767px;
+    border: 1px solid $ellipse-3;
+    border-radius: 50%;
+    position: relative;
+    left: 47px;
+    &::before {
+      content: "";
+      width: 610.94px;
+      height: 610.94px;
+      border: 1px solid $ellipse-2;
+      border-radius: 50%;
+      position: absolute;
+      left: 78.64px;
+      top: 78.63px;
+    }
+    &::after {
+      content: "";
+      width: 470.6px;
+      height: 470.6px;
+      border: 1px solid $ellipse-1;
+      border-radius: 50%;
+      position: absolute;
+      left: 148.8px;
+      top: 148.8px;
+    }
+  }
+
+
+  // .section-home__iso
+  &__iso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding-right: 57px;
+  }
+}
+
+.accent-soft {
+  color: $accent-soft;
+}
+
+.green {
+  color: $green;
+}
+
+.button {
+}
+
+.download-button {
+
+  // .download-button__img
+  &__img {
+    margin-right: 25px;
+  }
+
+  // .download-button__text
+  &__text {
+
+  }
+}
+
+.section-home-iso {
+  // .section-home-iso__countdown
+  &__countdown {
+    display: flex;
+    width: 734px;
+    border-radius: 14px;
+    background-color: $background-decor;
+    padding: 37px 74px 52px 54px;
+    justify-content: space-between;
+  }
+
+  // .section-home-iso__presale
+  &__presale {
+  }
+}
+
+.iso-countdown {
+  // .iso-countdown__title
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.47;
+    writing-mode: vertical-lr;
+    transform:rotate(180deg);
+    text-align: center;
+    margin: 0;
+  }
+
+  // .iso-countdown__info
+  &__info {
+    width: 493px;
+  }
+
+  // .iso-countdown__items
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+    width: 100%;
+  }
+
+  // .iso-countdown__item
+  &__item {
+
+  }
+
+  // .iso-countdown__quantity
+  &__quantity {
+    font-family: 'Mina';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: 0 0 23px 0;
+  }
+
+  // .iso-countdown__period
+  &__period {
+    font-weight: 400;
+    line-height: 1.06;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  // .iso-countdown__scale
+  &__scale {
+    width: 479px;
+    height: 25px;
+    background-color: #C7D0D9;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12.5px;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      content: "";
+      width: 213px;
+      height: 25px;
+      background-image: linear-gradient(90deg, #FCF3B8 0%, #F2F6E1 48.9%, #BDE0BB 98.83%);
+      box-shadow: 0px 6px 25px #C2E2BE;
+      border-radius: 12.5px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.iso-presale {
+  width: 503px;
+  // .iso-presale__coin-items
+  &__coin-items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 58px;
+    border-bottom: 1px solid $line;
+    margin-bottom: 58px;
+  }
+
+  // .iso-presale__coin-item
+  &__coin-item {
+    display: flex;
+  }
+
+  // .iso-presale__coin-info
+  &__coin-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.coin-item {
+  // .coin-item__icon
+  &__icon {
+    margin-right: 14px;
+  }
+
+  // .coin-item__info
+  &__info {
+  }
+
+  // .coin-item__price
+  &__price {
+    font-weight: 500;
+    line-height: 1.06;
+    margin: 0;
+  }
+
+  // .coin-item__text
+  &__text {
+    font-weight: 400;
+    line-height: 1.06;
+    margin: 0 0 5px 0;
+    color: $text-light;
+  }
+}
+
+.coin-info {
+  // .coin-info__text
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: $text-light;
+  }
+
+  // .coin-info__button
+  &__button {
+    margin-right: 0;
+  }
+}
+

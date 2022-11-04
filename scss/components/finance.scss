@@ -1,0 +1,18 @@
+.finance {
+  position: relative;
+  // .finance__section
+  &__section {
+    margin-bottom: 154px;
+    &::after {
+      content: url("../../images/wheat_transparent.png");
+      position: absolute;
+      left: 90%;
+      top: 130px;
+    }
+  }
+
+  // .finance__image
+  &__image {
+    max-width: 658px;
+  }
+}

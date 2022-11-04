@@ -1,0 +1,51 @@
+.what-is {
+  position: relative;
+  &::before {
+    content: url("../../images/grain.png");
+    position: absolute;
+    top: -70px;
+    right: 51%;
+    z-index: -1;
+  }
+  &::after {
+    content: url("../../images/wheat.png");
+    position: absolute;
+    left: 88.5%;
+    top: 355px;
+  }
+
+  // .what-is__section
+  &__section {
+    margin-bottom: 145px;
+  }
+
+  //.what-is__image
+  &__image {
+  }
+
+  // .what-is__list
+  &__list {
+    column-count: 2;
+    padding: 0;
+    margin: 61px 0 0 0;
+  }
+
+  // .what-is__item
+  &__item {
+    font-weight: 400;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $marker;
+      margin-right: 20px;
+    }
+  }
+}
